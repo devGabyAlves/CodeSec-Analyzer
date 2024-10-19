@@ -1,14 +1,16 @@
 body {
   font-family: 'Arial', sans-serif;
-  background-color: #121212;
-  color: #ffffff;
+  background-color: #121212; 
+  color: #ffffff; 
   margin: 0;
   padding: 0;
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 100vh;
+  align-items: flex-start; 
+  min-height: 100vh; 
+  overflow-y: auto; 
 }
+
 
 .app-container {
   text-align: center;
@@ -16,54 +18,36 @@ body {
   border-radius: 10px;
   padding: 30px;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.7);
-  max-width: 500px;
+  max-width: 600px;
   width: 100%;
-  transition: transform 0.3s ease-in-out;
+  margin: auto;
+  color: #fff;
 }
 
-.app-container:hover {
-  transform: scale(1.02);
+.results {
+  margin-top: 20px;
+  background-color: #2b2b2b;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: left;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }
 
-.header-image {
-  width: 100%; 
-  max-width: 300px;
-  margin: 20px auto; 
+.analysis-content {
+  white-space: pre-wrap;
+  background-color: #1e1e1e;
+  color: #f1f1f1;
+  padding: 15px;
+  border-radius: 8px;
+  font-family: 'Courier New', Courier, monospace;
+  overflow-x: auto;
+  line-height: 1.5;
 }
 
 h1 {
   color: #4caf50;
   font-size: 24px;
   margin-bottom: 10px;
-}
-
-p {
-  color: #a1a1a1;
-  font-size: 16px;
-  margin-bottom: 20px;
-}
-
-.file-upload {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-input[type="file"] {
-  margin: 10px 0;
-  padding: 5px;
-  background-color: #2b2b2b;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  width: 100%;
-  text-align: center;
-  cursor: pointer;
-  transition: background-color 0.3s ease-in-out;
-}
-
-input[type="file"]:hover {
-  background-color: #333333;
 }
 
 button {
@@ -75,9 +59,7 @@ button {
   border-radius: 5px;
   cursor: pointer;
   margin-top: 10px;
-  width: 100%;
-  max-width: 200px;
-  transition: background-color 0.3s ease-in-out, transform 0.2s;
+  transition: background-color 0.3s ease-in-out;
 }
 
 button:hover {
@@ -88,17 +70,10 @@ button:active {
   transform: scale(0.98);
 }
 
-.results {
-  margin-top: 20px;
-  background-color: #2b2b2b;
-  padding: 15px;
-  border-radius: 5px;
-}
-
 pre {
   background-color: #1e1e1e;
   color: #f1f1f1;
-  padding: 10px;
+  padding: 15px;
   border-radius: 5px;
   overflow-x: auto;
 }
