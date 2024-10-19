@@ -1,6 +1,6 @@
 # CodeSec Analyzer
 
-![Interface](./assets/CodeSec-Analyzer.png)
+![Interface](./public/CodeSec-Analyzer.png)
 
 ## Sobre o Repositório
 

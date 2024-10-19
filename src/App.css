@@ -25,6 +25,12 @@ body {
   transform: scale(1.02);
 }
 
+.header-image {
+  width: 100%; 
+  max-width: 300px;
+  margin: 20px auto; 
+}
+
 h1 {
   color: #4caf50;
   font-size: 24px;

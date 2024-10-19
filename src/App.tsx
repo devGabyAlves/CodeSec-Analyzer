@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './App.css';
 import FileUpload from './components/FileUpload';
 import { checkVulnerabilities } from './api/vulnerabilityCheck';
+import hackerImage from './assets/hacker.png';
 
 const App: React.FC = () => {
   const [vulnerabilities, setVulnerabilities] = useState<string | null>(null);
@@ -22,6 +23,9 @@ const App: React.FC = () => {
   return (
     <div className="app-container">
       <h1>Vulnerability Scanner</h1>
+
+      <img src={hackerImage} alt="Hacker illustration" className="header-image" />
+
       <p>Upload a file to analyze potential security vulnerabilities</p>
       <FileUpload onFileUpload={handleFileUpload} />
       {loading && <p>Analyzing file...</p>}
